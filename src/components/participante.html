@@ -1,0 +1,9 @@
+<each loop="participant in participants">
+  <figure>
+    <img src="{{ participant.avatarUrl }}" alt="{{ participant.alt }}" class="rounded-4xl">
+    <figcaption class="text-center pt-8 pb-8">
+      <h2 class="font-semibold text-2xl">{{ participant.name }}</h2>
+      <p class="pt-2">{{ participant.role }}</p>
+    </figcaption>
+  </figure>
+</each>

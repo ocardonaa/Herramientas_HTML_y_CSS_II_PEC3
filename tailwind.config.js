@@ -7,7 +7,8 @@ module.exports = {
     "./src/**/*.scss"
   ],
   theme: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 } 

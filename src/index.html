@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <include src="./views/header.html"></include>
+</head>
+<include src="./views/header.html"></include>
+
+<body>
+    <h1 class="text-3xl text-center pt-8 pb-8 font-semibold">Participantes</h1>
+    <div class="grid grid-cols-1 gap-4 ml-[15%] mr-[15%] md:grid-cols-2 lg:grid-cols-3">
+        <include src="components/participante.html" locals='{
+            "participants": [
+            {
+                "name": "Quian Cheng",
+                "role": "Experto en cocina oriental",
+                "avatarUrl": "./assets/images/chefs/chef1.jpg",
+                "alt": "Chef"
+            },
+            {
+                "name": "Juan Ramos",
+                "role": "Experto en cocina mediterránea y mexicana",
+                "avatarUrl": "./assets/images/chefs/chef2.jpg",
+                "alt": "Chef"
+            },
+            {
+                "name": "Mei Hou",
+                "role": "Nutricionista",
+                "avatarUrl": "./assets/images/chefs/chef3.jpg",
+                "alt": "Chef"
+            },
+            {
+                "name": "Mary Dawson",
+                "role": "Repostera en Hoffman",
+                "avatarUrl": "./assets/images/chefs/chef4.jpg",
+                "alt": "Chef"
+            },
+            {
+                "name": "Anne Dawson",
+                "role": "Organizadora de eventos en Hoffman",
+                "avatarUrl": "./assets/images/chefs/chef5.jpg",
+                "alt": "Chef"
+            },
+            {
+                "name": "Ricardo Gómez",
+                "role": "Crítico gastronómico",
+                "avatarUrl": "./assets/images/chefs/chef6.jpg",
+                "alt": "Chef"
+            }
+            ]
+            
+        }'>
+        </include>
+    </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+</body>
+
 </html>
