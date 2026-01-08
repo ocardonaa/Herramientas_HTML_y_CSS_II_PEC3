@@ -1,3 +1,9 @@
+/* aqui hay las directivas @apply, .scss y SASS no es muy compatible con Tailwind */
+
 body {
     @apply text-uoc-corporate bg-uoc-backg flex flex-col h-screen font-sans text-[1em] leading-[1.5em];
+}
+
+a.main-link {
+    @apply text-uoc-corporate hover:text-uoc-masterbrand
 }
