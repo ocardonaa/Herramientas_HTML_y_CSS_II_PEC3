@@ -1,20 +1,22 @@
 /* aqui hay las directivas @apply, .scss y SASS no es muy compatible con Tailwind */
 
 body {
-    @apply text-uoc-corporate bg-uoc-backg flex flex-col h-screen font-sans text-[1em] leading-[1.5em];
+    @apply text-uoc-corporate bg-uoc-backg flex flex-col h-screen font-sans text-[1em] leading-[1.5em]; /* apply 1: en el body que es muy extenso */
 }
 
 a.main-link {
-    @apply text-uoc-corporate hover:text-uoc-masterbrand
+    @apply text-uoc-corporate hover:text-uoc-masterbrand /* apply 2: en los links porque hay varios y ahorra código */
 }
 
 blockquote {
-    @apply w-[80%] text-justify pt-8 pb-8;
+    @apply w-[80%] text-justify pt-8 pb-8; /* apply 3: en los blockquote porque hay varios y ahorra código */
 }
 
 .fig-jornadas {
-    font-size: smaller;
+    font-size: smaller; /* parte del paradigma es tener este tipo de clases atomicas pero se ha minimizado por emplear a fondo Tailwind */
 }
+
+/* configuración de las pseudo-clases has() y where() extraidas de la anterior practica */
 
 blockquote> :where(p, li, ul) {
     font-size: 1.2em;

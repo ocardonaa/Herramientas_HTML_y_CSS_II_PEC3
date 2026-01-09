@@ -1,3 +1,5 @@
 @use "../variables";
 @use "../css/applies.css";
 @reference "tailwindcss";
+
+/* @reference junto a la importación de applies.css nos permite usar @apply */
