@@ -1,0 +1,9 @@
+<nav class="pt-6 pb-6">
+    <ul class="lg:flex lg:flex-row">
+        <each loop="elem in links">
+            <li class="mb-4 lg:pl-2 lg:pr-2">
+                <a href="{{ elem.link }}" class="main-link">{{ elem.name }}</a>
+            </li>
+        </each>
+    </ul>
+</nav>

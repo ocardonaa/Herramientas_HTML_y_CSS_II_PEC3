@@ -3,17 +3,19 @@
         <include src="./components/logo.html" locals='{
             "title": "CookXperiences"
         }'></include>
-        <nav class="pt-6">
-            <ul class="lg:flex lg:flex-row">
-                <li class="mb-4">
-                    <a href="./index.html" class="main-link">Participantes</a>
-                </li>
-                <li class="mb-4 lg:pl-4">
-                    <a href="./jornadas.html" class="main-link">Jornadas</a>
-                </li>
-            </ul>
-        </nav>
-
+        <include src="./components/navigation.html" locals='{
+            "links": [
+            {
+                "name": "Participantes",
+                "link": "./index.html"
+            },
+            {
+                "name": "Jornadas",
+                "link": "./jornadas.html"
+            }
+            ]
+        }'>
+        </include>
     </div>
     <hr class="w-[80%] ml-[10%] border-3 border-uoc-corporate opacity-25">
 </header>

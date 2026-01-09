@@ -7,3 +7,19 @@ body {
 a.main-link {
     @apply text-uoc-corporate hover:text-uoc-masterbrand
 }
+
+blockquote {
+    @apply w-[80%] text-justify pt-8 pb-8;
+}
+
+.fig-jornadas {
+    font-size: smaller;
+}
+
+blockquote> :where(p, li, ul) {
+    font-size: 1.2em;
+}
+
+div:has(blockquote) {
+    gap: 3em;
+}
