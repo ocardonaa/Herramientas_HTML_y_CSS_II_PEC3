@@ -9,6 +9,8 @@
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "targets": {
@@ -51,6 +53,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.1",
+    "gh-pages": "^6.3.0",
     "parcel-plugin-imagemin": "^4.0.2"
   }
 }
